@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iBlog - Login</title>
+    <link rel="stylesheet" href="css/login-style.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <h1>Welcome to iBlog</h1>
+        <form class="login-form" id="loginForm">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+            
+
+            <p class="signup-link">Don't have an account? <a href="#">Sign up</a></p>
+        </form>
+        
+        <p id="error-message" class="error-message"></p>
+    </div>
+    
+
+    <script>
+        
+        const users = [
+            { username: 'user1', password: 'pass1' },
+            { username: 'user2', password: 'pass2' },
+            { username: 'user3', password: 'pass3' }
+        ];
+
+        document.getElementById('loginForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorMsg = document.getElementById('error-msg');
+
+           
+            const user = users.find(user => user.username === username && user.password === password);
+
+            if (user) {
+                alert('Login successful! Welcome ' + user.username);
+                localStorage.setItem('loggedInUser', username); 
+                window.location.href = 'index.html'; 
+            } else {
+                errorMsg.textContent = 'Invalid username or password!';
+            }
+        });
+    </script>
+</body>
+</html>

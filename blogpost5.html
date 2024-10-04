@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blogpost.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>iBlog - Heaven for bloggers</title>
+</head>
+
+<body>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <a href="/">
+                <span><img src="img/logo.png" width="94px" alt=""></span>
+            </a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <form action="/search.html" method="get">
+                <input class="form-input" type="text" name="query" placeholder="Article Search">
+                <button class="btn">Search</button>
+            </form>
+
+        </div>
+
+    </nav>
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="post-img">
+        <img src="img/gendee.jpg" alt="">
+    </div>
+    <div class="m-auto blog-post-content max-width-2 m-auto my-2">
+        <h1 class="font1">Gender bias in AI systems — and how we might solve it</h1>
+        <div class="blogpost-meta">
+            <div class="author-info">
+                <div>
+                    <b>
+                        Monica Viggars
+                    </b>
+                </div>
+                <div>09 January | 10 min read</div>
+            </div>
+            <div class="social">
+                <svg width="29" height="29" class="hk">
+                    <path
+                        d="M22.05 7.54a4.47 4.47 0 0 0-3.3-1.46 4.53 4.53 0 0 0-4.53 4.53c0 .35.04.7.08 1.05A12.9 12.9 0 0 1 5 6.89a5.1 5.1 0 0 0-.65 2.26c.03 1.6.83 2.99 2.02 3.79a4.3 4.3 0 0 1-2.02-.57v.08a4.55 4.55 0 0 0 3.63 4.44c-.4.08-.8.13-1.21.16l-.81-.08a4.54 4.54 0 0 0 4.2 3.15 9.56 9.56 0 0 1-5.66 1.94l-1.05-.08c2 1.27 4.38 2.02 6.94 2.02 8.3 0 12.86-6.9 12.84-12.85.02-.24 0-.43 0-.65a8.68 8.68 0 0 0 2.26-2.34c-.82.38-1.7.62-2.6.72a4.37 4.37 0 0 0 1.95-2.51c-.84.53-1.81.9-2.83 1.13z">
+                    </path>
+                </svg>
+
+                <svg style="background: black;
+                border-radius: 21px;" width="29" height="29" viewBox="0 0 29 29" fill="none" class="hk">
+                    <path
+                        d="M5 6.36C5 5.61 5.63 5 6.4 5h16.2c.77 0 1.4.61 1.4 1.36v16.28c0 .75-.63 1.36-1.4 1.36H6.4c-.77 0-1.4-.6-1.4-1.36V6.36z">
+                    </path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M10.76 20.9v-8.57H7.89v8.58h2.87zm-1.44-9.75c1 0 1.63-.65 1.63-1.48-.02-.84-.62-1.48-1.6-1.48-.99 0-1.63.64-1.63 1.48 0 .83.62 1.48 1.59 1.48h.01zM12.35 20.9h2.87v-4.79c0-.25.02-.5.1-.7.2-.5.67-1.04 1.46-1.04 1.04 0 1.46.8 1.46 1.95v4.59h2.87v-4.92c0-2.64-1.42-3.87-3.3-3.87-1.55 0-2.23.86-2.61 1.45h.02v-1.24h-2.87c.04.8 0 8.58 0 8.58z"
+                        fill="#fff"></path>
+                </svg>
+
+                <svg width="29" height="29" class="hk">
+                    <path
+                        d="M23.2 5H5.8a.8.8 0 0 0-.8.8V23.2c0 .44.35.8.8.8h9.3v-7.13h-2.38V13.9h2.38v-2.38c0-2.45 1.55-3.66 3.74-3.66 1.05 0 1.95.08 2.2.11v2.57h-1.5c-1.2 0-1.48.57-1.48 1.4v1.96h2.97l-.6 2.97h-2.37l.05 7.12h5.1a.8.8 0 0 0 .79-.8V5.8a.8.8 0 0 0-.8-.79">
+                    </path>
+                </svg>
+
+            </div>
+        </div>
+        <p>
+            Artificial intelligence is changing our world — we need to consider how it impacts the equity of our future.</p> <br>
+
+            <p>The challenge we face : </p> <br>
+
+           <p>AI technologies have the power to change human society, but our inherent biases are still holding it back.
+            Computer scientist and former co-lead of Google’s Ethical AI team Timnit Gebru says: “If you train an AI on
+            biased data, it will give you biased results.”
+
+            Gender bias is already a prevalent problem in some AI systems and I had one such concerning interaction with
+            the AI image generation tool, Midjourney.
+
+            The image below shows the results I got when I prompted Midjourney for the term “Product Coach”, my current
+            job title. The results only showed men, where I would have expected to see people of different genders
+            represented.
+
+
+            I also prompted Midjourney for results specifically on “Female Product Coach” and received the images below.
+            I was surprised to see these outdated representations of women.</p> <br>
+
+
+           <p>Why this matters ? </p> <br>
+
+            <p>If we consider how AI technologies are being embedded in our everyday lives, then we have a more urgent
+            cause for concern.
+
+            As advances are made in the use of AI in healthcare settings, automated job application screenings, facial
+            recognition and more, we have a collective responsibility to ensure that these types of technologies work
+            for all.
+
+            To take one example, a study published in BMJ Health & Care Informatics in 2022 describes how UCL
+            researchers recreated four AI models that had been previously documented as having a greater than 70%
+            success rate in identifying liver disease from the results of blood tests. The research team looked at how
+            these algorithms performed by gender and discovered that they missed 44% of the liver disease cases among
+            women compared to 23% of those among the men.
+
+            To illustrate the point, Lead Author and PhD candidate Dr Isabel Straw from the UCL Institute of Health
+            Informatics said: “AI algorithms are increasingly used in hospitals to assist doctors in diagnosing
+            patients. Our study shows that, unless these algorithms are investigated for bias, they may only help a
+            subset of patients, leaving other groups with worse care.”</p> <br>
+
+            <p>How we might solve this ? </p> <br>
+
+            <p>I see the problem of gender bias in AI technologies as an issue that begins in the education space and
+            cascades through to the data sets which the systems are trained on.</p> <br>
+
+
+            <p>Education : </p> <br>
+
+           <p>According to UN.org, only 28% of engineering graduates and 40% of graduates in computer science and
+            informatics are accounted for by women worldwide.
+
+            In order to solve this we need to consider how we might improve the level of accessibility in STEM
+            education.
+
+            One solution could be to run programmes in schools that help educate and raise awareness of the different
+            types of STEM careers and opportunities that exist.</p> <br>
+
+            <p>Workplace : </p> <br>
+
+            <p>The lack of women studying STEM subjects means that there is not adequate gender representation in this area
+            of the workplace. Subsequently, the group of people working on AI technologies is somewhat homogeneous. In
+            the world of artificial intelligence, only one in five (22%) professionals is a woman, according to UN.org.
+
+            To help solve this, we could consider the use of tools such as Textio, to remove gender bias in the language
+            of job descriptions, and Applied, to anonymise job applications in the workplace. Caution would need to be
+            exercised, however, as many of these technologies use AI to provide their services.</p> <br>
+
+            <p>Principles : </p> <br>
+
+            <p>After solving education and workplace issues, we can consider establishing AI development principles.
+
+            Some organisations, such as Google and Microsoft, have established their own set of AI principles. However,
+            Stephen Downes, Senior Research Officer for Digital Technologies with the National Research Council of
+            Canada notes that “there is no common agreement about what those are. While it is common to assume there is
+            some sort of unanimity about ethical principles, this unanimity is rarely broader than a single culture,
+            profession or social group.”
+
+            Given the lack of gender-diversity in the AI workplace today, existing principles are likely to be
+            inherently biased.
+
+            One solution could be to bring together a gender-diverse set of experts in the fields of technology,
+            research, sociology and law to co-create universal AI development principles to help create accountability
+            for data quality.</p> <br>
+
+
+           <p>Data : </p> <br>
+
+            <p>If we are able to solve the challenges around education, the workplace and principles, we can hopefully move
+            closer to a world where we have better gender diversity in the AI workplace and a universal set of
+            guidelines that result in improved training data and less biased AI systems.
+
+            In conclusion, the problem of gender bias in AI technologies is a complex issue that requires a
+            multi-faceted approach. </p>
+
+
+    </div>
+
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="home-articles max-width-1 m-auto font2">
+        <h2>People who read this also read</h2>
+        <div class="row">
+
+
+            <div class="home-article more-post">
+                <div class="home-article-img">
+                    <img src="img/ily.jpg" alt="article">
+                </div>
+                <div class="home-article-content font1 center">
+                    <a href="/blogpost.html">
+                        <h3>Learning to Live Alone In My 30s: How I Travel Is In My Hands (Most Of The Time)</h3>
+                    </a>
+    
+                    <div>Dilly Attygalle </div>
+                    <span>07 January | 15 min read</span>
+                </div>
+            </div>
+            <div class="home-article more-post">
+                <div class="home-article-img">
+                    <img src="img/img3.webp" alt="article">
+                </div>
+                <div class="home-article-content font1 center">
+                    <a href="/blogpost1.html">
+                        <h3>Trae Stephens Has Built AI Weapons and Worked for Donald Trump. As He Sees It, Jesus Would
+                            Approve</h3>
+                    </a>
+    
+                    <div>Steven Levy</div>
+                    <span>25 September | 8 min read</span>
+                </div>
+            </div>
+            <div class="home-article more-post">
+                <div class="home-article-img">
+                    <img src="img/img4.webp" alt="article">
+                </div>
+                <div class="home-article-content font1 center">
+                    <a href="/blogpost2.html">
+                        <h3>The Vagus Nerve’s Crucial Role in Creating the Human Sense of Mind</h3>
+                    </a>
+    
+                    <div> Quanta Magazine</div>
+                    <span>08 December | 12 min read</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright &copy; iBlog.com </p>
+        <a href="https://www.vecteezy.com/free-vector/typewriter">Vector Credits: Vecteezy</a>
+    </div>
+</body>
+
+</html>

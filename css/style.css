@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* body {
+  background-image: url("../img/555.jpg");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
+.navigation {
+  margin-top: 0px;
+  font-family: var(--font1);
+  /* height: 74px;  */
+  display: flex;
+  background-color: rgb(198, 240, 195);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+}
+
+.nav-left span {
+  font-size: 35px;
+  padding-top: 10px;
+}
+
+.nav-left ul {
+  display: flex;
+  align-items: center;
+  margin: 0 77px;
+  font-size: 22px;
+  padding-bottom: 23px;
+}
+
+.nav-left ul li {
+  list-style: none;
+  margin: 0 14px;
+  font-family: var(--font2);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-left ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-left ul li a:hover {
+  color: var(--main-bg-color);
+  font-weight: bolder;
+}
+
+.content {
+  height: 100%;
+  background-color: white;
+
+  display: flex;
+  margin-top: 0px;
+  padding: 9px;
+  position: relative;
+}
+
+.content-left {
+  font-family: var(--font2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 52px;
+  padding: 70px;
+  z-index: 1;
+}
+
+.content-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-right img {
+  height: 645px;
+  /* border: 2px solid black; */
+  border-radius: 200px;
+  text-align: right;
+}
+
+.home-articles {
+  padding: 18px;
+  background-color: white;
+  margin-top: 23px;
+  position: relative;
+}
+
+.year-box {
+  position: absolute;
+  right: 0px;
+  top: 100px;
+  width: 234px;
+  height: 255px;
+  font-size: 18px;
+}
+
+.year-box div {
+  margin: 12px 0px;
+}
+
+.home-article {
+  display: flex;
+  margin: 25px;
+}
+
+.home-article img {
+  width: 300px;
+}
+
+.home-article-content {
+  align-self: center;
+  padding: 25px;
+}
+
+.home-article-content a {
+  text-decoration: none;
+  color: black;
+}
+
+/* .home-articles{} */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(198, 240, 195);
+  color: black;
+  text-align: center;
+  height: 67px;
+
+}
+
+.footer p {
+  margin-top: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.footer a {
+
+  color: black;
+}
+
+
+textarea {
+  width: 95%;
+  height: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 10px;
+  resize: none;
+}
+
+.containers {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+
+  background: rgb(170, 219, 187);
+  border-radius: 8px;
+
+}
+
+
+
+button:hover {
+  background-color: #218838;
+}
+
+#message {
+  text-align: center;
+  margin-top: 20px;
+  color: green;
+}
